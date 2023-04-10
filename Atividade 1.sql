@@ -30,3 +30,7 @@ INSERT INTO tb_personagens (id_personagem, nome_personagem, nivel_personagem, id
 SELECT * FROM tb_personagens;
 
 SELECT nome_personagem, nivel_personagem FROM tb_personagens;
+
+SELECT tb_personagens.nome_personagem, tb_personagens.nivel_personagem, tb_classes.nome_classe FROM tb_personagens
+
+INNER JOIN tb_classes ON tb_personagens.id_classe = tb_classes.id_classe;
